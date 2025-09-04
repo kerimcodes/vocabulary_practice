@@ -16,7 +16,7 @@ Bu python projesi,Tkinter ille yapılmış bir kelime pratik uygulamasıdır.Kel
 - json üzerinden dosya işlemleri
 - Random seçimle kelime sorma
 
-## Kullanılan Moduller 
+###  Kullanılan Moduller 
 -os
 -sys
 -json
