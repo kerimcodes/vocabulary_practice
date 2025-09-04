@@ -22,12 +22,7 @@ Bu python projesi,Tkinter ille yapılmış bir kelime pratik uygulamasıdır.Kel
 -json
 -random
 -tkinter,ttk,messagebox
-
-----
-
-
-TKİNTER ENGLISH PRACTICE | ENGLİSH VOCABULARY PRACTICE
-
+---
 
 ## English Description
 
