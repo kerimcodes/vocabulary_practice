@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PyInstaller build klasörleri
+build/
+dist/
+*.spec
+
+# IDE ve sistem dosyaları
+.vscode/
+.idea/
+.DS_Store
+
+# Diğer gereksiz dosyalar
+.env
