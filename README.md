@@ -17,11 +17,12 @@ Bu python projesi,Tkinter ille yapılmış bir kelime pratik uygulamasıdır.Kel
 - Random seçimle kelime sorma
 
 ###  Kullanılan Moduller 
--os
--sys
--json
--random
--tkinter,ttk,messagebox
+- os
+- sys
+- json
+- random
+- tkinter,ttk,messagebox
+
 ---
 
 ## English Description
@@ -45,8 +46,10 @@ This python project is a vocabulary practice application made with Tkinter. You 
 
 
 ## Modules Used
--os
--sys
--json
--random
--tkinter,ttk,messagebox
+- os
+- sys
+- json
+- random
+- tkinter,ttk,messagebox
+
+----
