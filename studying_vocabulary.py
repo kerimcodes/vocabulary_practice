@@ -33,7 +33,7 @@ def studying(window):
                     turkihes = [x.strip() for x in list["Turkish"].lower().split(",")]
                     user_words = [x.strip() for x in data.split(",")]
 
-                    if any(word in turkihes for word in user_words):
+                    if all(word in turkihes for word in user_words):
                         label_control.config(
                             text=f"Congratulations, It's True! -> {list['Turkish']}",
                             background="yellow"
