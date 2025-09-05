@@ -10,6 +10,7 @@ def studying(window):
     current_word = None
     def ask():
         global asked_words,words,current_word
+        label_control.config(text="")
         while True:
             asked = random.choice(words)
             if len(asked_words) == 10:
@@ -20,24 +21,33 @@ def studying(window):
                 label_ask.config(text=f"Word: {asked}")
                 asked_words.insert(0,asked)
                 break
-        current_word = asked    
+        current_word = asked
+
     def control():
         global current_word
-        data = entry.get().capitalize()
+        data = entry.get().lower().strip()
         if data:
             listes = utils.listing()
             for list in listes:
                 if list["Word"] == current_word:
-                    turkihes = list["Turkish"].strip().split(",")
-                    if data in turkihes:
-                        label_control.config(text=f"Congrulations,It's True! ->{list['Turkish']}",background="yellow")
+                    turkihes = [x.strip() for x in list["Turkish"].lower().split(",")]
+                    user_words = [x.strip() for x in data.split(",")]
+
+                    if any(word in turkihes for word in user_words):
+                        label_control.config(
+                            text=f"Congratulations, It's True! -> {list['Turkish']}",
+                            background="yellow"
+                        )
                     else:
-                        label_control.config(text="Unfortunately wrong...\n" \
-                        f"The truth is {list['Turkish']}"
-                        ,background="red")
-                    entry.delete(0,tk.END)
+                        label_control.config(
+                            text=f"Unfortunately wrong...\nThe truth is {list['Turkish']}",
+                            background="red"
+                        )
+                    entry.delete(0, tk.END)
         else:
-            label_control.config(text="the turkish of word had not written")
+            label_control.config(text="The Turkish of the word has not been written")
+
+
 
     top = tk.Toplevel(window)
 
