@@ -113,7 +113,9 @@ def search():
                 tree.insert("","end",values=(word["id"],word["Word"],word["Meaning"],word["Turkish"],word["Example"]))
                 isfound = True
         if not isfound:
+            add_tree()
             messagebox.showwarning("Warning","Cannot results found")
+            search_entry.delete(0,tk.END)
     else:
         tree.delete(*tree.get_children())
         add_tree()
