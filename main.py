@@ -5,14 +5,18 @@ import utils
 import studying_vocabulary as study
 
 def add():
+    words = [word_dict["Word"] for word_dict in utils.listing()]
     word = word_entry.get().capitalize()
     meaning = meaning_entry.get().capitalize()
     turkish = turkish_entry.get().capitalize()
     example = example_entry.get().capitalize()
     
     if word and meaning and turkish and example:
-        vocab = utils.add_json(word, meaning, turkish, example) 
-        tree.insert("","end",values=(vocab["id"],vocab["Word"],vocab["Meaning"],vocab["Turkish"],vocab["Example"]))
+        if word in words:
+            messagebox.showwarning("Warning","There is word alrady in list")
+        else:
+            vocab = utils.add_json(word, meaning, turkish, example) 
+            tree.insert("","end",values=(vocab["id"],vocab["Word"],vocab["Meaning"],vocab["Turkish"],vocab["Example"]))
         
         word_entry.delete(0,tk.END)
         meaning_entry.delete(0,tk.END)

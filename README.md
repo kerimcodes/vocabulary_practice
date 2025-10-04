@@ -28,7 +28,7 @@ Bu python projesi,Tkinter ille yapılmış bir kelime pratik uygulamasıdır.Kel
 ## English Description
 
 
-This python project is a vocabulary practice application made with Tkinter. You add words, it shows the words you have added in a list. If you choose, it gives you a random word and asks you its Turkish.
+This python project is a vocabulary practice application made with Tkinter. You add words, it shows the words you have added in a list. If you want, it gives you a random word and asks you its Turkish.
 
 
 #### Features

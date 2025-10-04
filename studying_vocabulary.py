@@ -4,8 +4,7 @@ import random
 import utils
 
 asked_words = []
-wordss = utils.listing()
-words = [word["Word"] for word in wordss]
+words = [word["Word"] for word in utils.listing()]
 def studying(window):
     current_word = None
     def ask():
