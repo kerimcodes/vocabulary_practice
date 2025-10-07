@@ -34,11 +34,109 @@
     "Turkish": "Deneyim,tecrübe",
     "Example": "In my experience,people smile back if you smile at them"
   },
-  {
+{
     "id": 6,
-    "Word": "Deaf",
-    "Meaning": "-",
-    "Turkish": "-",
-    "Example": "-"
+    "Word": "Movement",
+    "Meaning": "A group of people with the same beliefs who work together to achieve smth",
+    "Turkish": "Hareket,eylem,girişim",
+    "Example": "The woman's movement"
+  },
+  {
+    "id": 7,
+    "Word": "Audience",
+    "Meaning": "The people who sit and watch a performance ata theatre etc.",
+    "Turkish": "Dinleyici",
+    "Example": "There were a lot of children in the audience"
+  },
+  {
+    "id": 8,
+    "Word": "Critic",
+    "Meaning": "Someone who says that they don't approve of someone or something",
+    "Turkish": "Muhalif,karşı görüşü savunan",
+    "Example": "An out spoken critic of the government"
+  },
+  {
+    "id": 9,
+    "Word": "Extremely",
+    "Meaning": "Very,or much more than usual",
+    "Turkish": "Son derece,çok,aşırı",
+    "Example": "We all studied extremely hard for the exam"
+  },
+  {
+    "id": 10,
+    "Word": "Receive",
+    "Meaning": "To get something that someone has given or sent to you",
+    "Turkish": "Almak,teslim almak",
+    "Example": "She received a number of awards during her lifetime"
+  },
+  {
+    "id": 11,
+    "Word": "Attain",
+    "Meaning": "To achieve something,especially after a lot of work",
+    "Turkish": "Öğrenmek,elde etmek,kazanmak",
+    "Example": "She has attained a high level of fitness"
+  },
+  {
+    "id": 12,
+    "Word": "Achieve",
+    "Meaning": "To succeed in doing something good",
+    "Turkish": "Başarmak,ulaşmak",
+    "Example": "I have been working all day but i fell i have achieved nothing"
+  },
+  {
+    "id": 13,
+    "Word": "Preparation",
+    "Meaning": "The things that you do or the time that you spend preaparing for something",
+    "Turkish": "Hazırlama,hazırlanma,hazırlık",
+    "Example": "Did you do much preparation for your interview"
+  },
+  {
+    "id": 14,
+    "Word": "Properly",
+    "Meaning": "Correctly,or in a satisfactory way",
+    "Turkish": "Uygun şekilde,gerektiği gibi doğru olarak",
+    "Example": "She does not eat properly"
+  },
+  {
+    "id": 15,
+    "Word": "Upset",
+    "Meaning": "Unhappy or worried because something unpleasant has happend",
+    "Turkish": "Üzgün,üzüntülü,keyfi kaçmış",
+    "Example": "Mike got very upset when ı told him the news"
+  },
+  {
+    "id": 16,
+    "Word": "Matter",
+    "Meaning": "A subject or situation tjat you need to think about discuss or deal with",
+    "Turkish": "Konu,mesele,sorun",
+    "Example": "I have been thinking about this matter for a long time"
+  },
+  {
+    "id": 17,
+    "Word": "Accidentally",
+    "Meaning": "By chance,coincidentally",
+    "Turkish": "Tesadüfen",
+    "Example": "The waiter accidentally dropped a plate"
+  },
+  {
+    "id": 18,
+    "Word": "Aware",
+    "Meaning": "To know about something",
+    "Turkish": "Bir şeyin farkında olmak",
+    "Example": "Are you aware of the risks involved"
+  },
+  {
+    "id": 19,
+    "Word": "Involve",
+    "Meaning": "That things is a necessary part of it ",
+    "Turkish": "Gerektirmek,icap ettirmek",
+    "Example": "The trips often involve a lot of walking"
+  },
+  {
+    "id": 20,
+    "Word": "Minority",
+    "Meaning": "A part of group ",
+    "Turkish": "Azınlıkta olan,küçük grup",
+    "Example": "I voted to accept the propasal,but ı was in the minority"
   }
 ]

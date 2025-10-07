@@ -4,6 +4,8 @@ import random
 import utils
 
 asked_words = []
+wrong_answers = []
+
 words = [word["Word"] for word in utils.listing()]
 def studying(window):
     current_word = None
@@ -23,7 +25,7 @@ def studying(window):
         current_word = asked
 
     def control():
-        global current_word
+        global current_word,wrong_answers
         data = entry.get().lower().strip()
         if data:
             listes = utils.listing()
@@ -40,13 +42,23 @@ def studying(window):
                     else:
                         label_control.config(
                             text=f"Unfortunately wrong...\nThe truth is {list['Turkish']}",
-                            background="red"
-                        )
+                            background="red")
+                        wrong_answers.append(current_word)
+                        if len(wrong_answers) == 10:
+                            ask_btn.config(state="disabled")
                     entry.delete(0, tk.END)
         else:
             label_control.config(text="The Turkish of the word has not been written")
 
+    def listing():
+        new_top = tk.Toplevel(top)
+        new_top.title("incorrect answers")
+        for i,wrong in enumerate(wrong_answers,start=1):
+            tk.Label(new_top,text=f"{i}- {wrong}").pack()
+        
+        ask_btn.config(state="normal")
 
+        new_top.mainloop()
 
     top = tk.Toplevel(window)
 
@@ -69,5 +81,8 @@ def studying(window):
 
     control_btn = ttk.Button(frame,text="Control",command=control)
     control_btn.grid(row=1,column=1,padx=2)
+
+    listing_btn = ttk.Button(frame,text="Listing the incorrect answers",command=listing)
+    listing_btn.grid(row=1,column=3,padx=0)
 
     top.mainloop()
