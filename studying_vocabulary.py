@@ -55,7 +55,7 @@ def studying(window):
         new_top.title("incorrect answers")
         for i,wrong in enumerate(wrong_answers,start=1):
             tk.Label(new_top,text=f"{i}- {wrong}").pack()
-        
+        wrong_answers = []
         ask_btn.config(state="normal")
 
         new_top.mainloop()
