@@ -51,10 +51,11 @@ def studying(window):
             label_control.config(text="The Turkish of the word has not been written")
 
     def listing():
+        global wrong_answers
         new_top = tk.Toplevel(top)
         new_top.title("incorrect answers")
         for i,wrong in enumerate(wrong_answers,start=1):
-            tk.Label(new_top,text=f"{i}- {wrong}").pack()
+            tk.Label(new_top,text=f"{i} - {wrong}").pack()
         wrong_answers = []
         ask_btn.config(state="normal")
 
