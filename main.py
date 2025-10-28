@@ -124,6 +124,11 @@ def search():
         tree.delete(*tree.get_children())
         add_tree()
 
+def back():
+    search_entry.delete(0,tk.END)
+    tree.delete(*tree.get_children())
+    add_tree()
+
 def on_mousewheel(event):
     tree.yview_scroll(int(-1*(event.delta/120)), "units")
 
@@ -177,11 +182,13 @@ add_btn = ttk.Button(alt_frame,text="Add",command=add)
 update_btn = ttk.Button(alt_frame,text="Update",command=update)
 start_to_asking = ttk.Button(alt_frame,text="Asking",command= lambda : study.studying(window))
 search_btn = ttk.Button(alt_frame,text="Search",command=search)
+back_btn = ttk.Button(alt_frame,text="Back",command=back)
 
 add_btn.grid(row=0,column=8,padx=3)
 update_btn.grid(row=0,column=9,padx=3)
 start_to_asking.grid(row=0,column=10)
 search_btn.grid(row=1,column=6)
+back_btn.grid(row=1,column=7)
 
 tree.bind("<Double-Button-1>",double_selection)
 tree.bind("<Button-3>",right_selection)
