@@ -133,16 +133,18 @@ def on_mousewheel(event):
     tree.yview_scroll(int(-1*(event.delta/120)), "units")
 
 def on_return(event):
-    word = word_entry.get()
-    meaning = meaning_entry.get()
-    turkish = turkish_entry.get()
-    example = example_entry.get()
-    data = search_entry.get()
+    if event.keysym == "Return":
+        print("Bastın")
+        word = word_entry.get()
+        meaning = meaning_entry.get()
+        turkish = turkish_entry.get()
+        example = example_entry.get()
+        data = search_entry.get()
 
-    if data:
-        search()
-    elif word and meaning and turkish and example:
-        add()
+        if data:
+            search()
+        elif word and meaning and turkish and example:
+            add()
 
 window = tk.Tk()
 window.title("Home Page")
@@ -205,7 +207,7 @@ back_btn.grid(row=1,column=7)
 tree.bind("<Double-Button-1>",double_selection)
 tree.bind("<Button-3>",right_selection)
 tree.bind("<MouseWheel>",on_mousewheel)
-window.bind("<Enter>",on_return)
+window.bind_all("<Enter>",on_return)
 window.bind("<Escape>",back)
 
 add_tree()
